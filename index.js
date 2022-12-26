@@ -20,7 +20,21 @@ numeros.forEach(item => {
 const quadradoPreto = document.querySelector('.preto')
 quadradoPreto.addEventListener('click', toggleAzul)
 
-function toggleAzul(){
+function toggleAzul() {
     alert('Esse quadrado TEM a classe azul!')
     quadradoPreto.classList.toggle('azul')
 }
+
+//------ Exercício 4 ------
+
+const campo = document.querySelectorAll("input[name='validacao']")
+
+campo.forEach(input => {
+    input.addEventListener('change', function () {
+        if (input.value !== '') {
+            input.classList.add('valido')
+        } else if (input.value === '') {
+            input.classList.remove('valido')
+        }
+    })
+})

@@ -19,3 +19,7 @@ div:last-child {
 .quadrado.azul{
     background-color: blue;
 }
+
+.valido{
+    border: solid 2px green;
+}
