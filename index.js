@@ -1,10 +1,9 @@
 //------ Exercício 1 ------
-const btntrocarCor = document.querySelector('button')
-const novaCor = document.querySelectorAll('.quadrado')
+const btnTrocarCor = document.querySelector('button')
+btnTrocarCor.addEventListener('click', toggleAmarelo)
 
-btntrocarCor.addEventListener('click', toggleColor)
-
-function toggleColor() {
+function toggleAmarelo() {
+    const novaCor = document.querySelectorAll('.quadrado')
     novaCor[0].classList.toggle('nova-cor')
 }
 
@@ -15,3 +14,13 @@ let numeros = [65, 44, 12, 4]
 numeros.forEach(item => {
     console.log(item * 10)
 })
+
+//------ Exercício 3 ------
+
+const quadradoPreto = document.querySelector('.preto')
+quadradoPreto.addEventListener('click', toggleAzul)
+
+function toggleAzul(){
+    alert('Esse quadrado TEM a classe azul!')
+    quadradoPreto.classList.toggle('azul')
+}

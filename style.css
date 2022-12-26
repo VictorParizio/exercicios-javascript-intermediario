@@ -11,3 +11,11 @@ div:last-child {
 .nova-cor {
     background-color: yellow;
 }
+
+.quadrado.preto {
+    background-color: black;
+}
+
+.quadrado.azul{
+    background-color: blue;
+}
