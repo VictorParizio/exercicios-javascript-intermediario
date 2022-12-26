@@ -1,0 +1,13 @@
+.quadrado {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+}
+
+div:last-child {
+    background-color: red;
+}
+
+.nova-cor {
+    background-color: yellow;
+}
